@@ -1,14 +1,95 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+:root{
+    --gray-fae:#26261c;
+    --light-gray-fae:#3e3e36;
+    --mostard-color: #d6c036;
+}
+
+html, body{
+    height: 100vh;
 }
 
 
 .bi.bi-whatsapp{
-    color:red;
+    color: var(--mostard-color);
 }
 
-img{
-    background-color:black;
+.bi.bi-envelope{
+    color: var(--mostard-color);
+}
+
+main{
+    width:100%;
+}
+
+#section-contacts-information{
+    display:flex;
+    background: var(--gray-fae);
+    padding:2%;
+    justify-content: center;
+    gap:1rem;
+}
+
+#section-contacts-information .card{
+   background-color:var(--light-gray-fae);
+   color:white;
+   border-radius:0.3rem;
+   width:450px;
+}
+
+#section-contacts-information .card .card-body{
+    display:flex;
+ }
+
+ #section-contacts-information .card .card-body .card-title{
+    width:150px;
+    
+ }
+
+ #section-contacts-information .card .card-body .card-text{
+    width:260px;
+    font-weight:100;
+ }
+
+ #section-contacts-information .card .card-body h5 span:first-child{
+    color: var(--mostard-color);
+    font-weight:100;
+ }
+
+ #section-contacts-information .card .card-body h5 span:last-child{
+    margin-left:10px;
+    font-weight:bold;
+ }
+
+footer{
+    position:fixed;
+    width:100%;
+    background:var(--gray-fae);
+    padding:1rem;
+    text-align:right;
+    bottom: 0;
+}
+
+@media screen and (max-width: 860px) {
+
+    #section-contacts-information{
+        flex-direction: column;
+    }
+
+    #section-contacts-information .card{
+        display:inline-block;
+        margin: 0 auto;
+     }
+
+    #section-contacts-information .card .card-body{
+        display:inline-block;
+        padding:2rem 3rem;
+     }
+
+    #geo-location-map{
+        display: none;
+    }
+
+    footer{
+        text-align:center;
+    }
 }
