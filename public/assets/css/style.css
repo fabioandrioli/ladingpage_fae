@@ -46,8 +46,12 @@ main{
  }
 
  #section-contacts-information .card .card-body .card-text{
-    width:260px;
+    width:150;
     font-weight:100;
+ }
+
+ #section-contacts-information .card:last-child .card-body p{
+     line-height:1.9;
  }
 
  #section-contacts-information .card .card-body h5 span:first-child{
