@@ -22,7 +22,6 @@ header{
     position: relative;
     width: 100%;
     display: flex;
-
 }
 
 header .show-courses{
@@ -92,7 +91,7 @@ header .show-courses .description{
  header .show-courses .description .title p{
     width: 100%;
     font-weight:400;
-    font-size: 12pt;
+    font-size: 22pt;
     float: right;
     line-height:1;
  }
@@ -100,8 +99,8 @@ header .show-courses .description{
  header .show-courses .description .title .word-fae{
     float:left;
     font-weight:bold;
-    color: var(--mostard-color);
-    font-size: 30pt;
+    color: #fed900;
+    font-size: 50pt;
     margin-right: 2%;
  }
 
