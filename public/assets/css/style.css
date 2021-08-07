@@ -57,58 +57,60 @@ header .show-courses .description{
     padding:2%;
     flex-direction: column;
     width: 310px;
- }
+}
 
- header .show-courses .description p{
+header .show-courses .description p{
     margin: 0;
     font-size:20px;
     font-weight: bold;
- }
+}
 
- header .show-courses .description .view-courses{
-   font-weight:300;
-   font-size: 14px;
- }
+header .show-courses .description .view-courses{
+    font-weight:300;
+    font-size: 14px;
+}
 
- header .show-courses .description a{
+header .show-courses .description a{
     text-decoration: none;
     text-align:center;
     font-size: 12px;
     color:white;
     text-decoration: underline;
-  }
+}
 
 
- header .show-courses .description span{
+header .show-courses .description span{
     color: var(--mostard-color);
     font-weight: 300;
- }
+}
 
- header .show-courses .description .title{
+header .show-courses .description .title{
     width: 100%;
- }
+}
 
- header .show-courses .description .title p{
+header .show-courses .description .title p{
     width: 100%;
     font-weight:400;
     font-size: 22pt;
     float: right;
     line-height:1;
- }
+}
 
- header .show-courses .description .title .word-fae{
+header .show-courses .description .title .word-fae{
     float:left;
     font-weight:bold;
     color: #fed900;
     font-size: 50pt;
     margin-right: 2%;
- }
+    font-family: tahoma, arial, helvetica;
+    letter-spacing:-5px;
+}
 
- header .show-courses .description .title span:last-child{
+header .show-courses .description .title span:last-child{
     color: rgb(255, 255, 255);
     font-weight:400;
     line-height:1.3;
- }
+}
 
 header .show-courses .description ul{
     font-size:12px;
@@ -116,30 +118,28 @@ header .show-courses .description ul{
     text-decoration: none;
     text-align: center;
     padding:0 2%;
-    
- }
 
- header .show-courses .description ul li{
+}
+
+header .show-courses .description ul li{
     display:flex;
     width:80%;
     justify-content:flex-end;
     align-items: center;
- }
+}
 
- header .show-courses .description ul li i{
+header .show-courses .description ul li i{
     margin-left: 10px;
     font-size:21px;
 
- }
+}
 
- header .show-courses .description hr{
+header .show-courses .description hr{
     border-top: 1px solid rgb(255, 255, 255);
     margin-top:0.4rem;
     margin-bottom: 0.5rem;
-   
- }
 
-
+}
 
 header .subscribe{
     display: flex;
@@ -147,18 +147,17 @@ header .subscribe{
     background:#fed900;
  
    
- }
+}
 
- header .subscribe .content{
+header .subscribe .content{
     z-index: 2;
- }
+    display: flex;
+}
 
-
-
- header .subscribe .content img{
-    height:500px;
-    width:100%;
- }
+header .subscribe .content img{
+    height:679px;
+    width:332px;
+}
 
 main{
     width:100%;
@@ -232,8 +231,8 @@ footer{
         padding:2rem 3rem;
      }
 
-    #geo-location-map{
-        display: none;
+     #section-geo-location-map{
+        display:none;
     }
 
     footer{
