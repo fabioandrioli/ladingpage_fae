@@ -19,16 +19,38 @@ html, body{
 }
 
 header{
+    position: relative;
+    width: 100%;
     display: flex;
 
 }
 
 header .show-courses{
-   display: flex;
-   width: calc(40% + 50px);
-   background:#424032;
-   color:white;
-   justify-content:flex-end;
+    position:relative;
+    z-index: 1;
+    background:#424032;
+    display: flex;
+    width: 40%;
+    color:white;
+    justify-content:flex-end;
+
+}
+
+header .show-courses::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:#424032;
+    transform-origin: top right;
+    -ms-transform: skew(16deg, 0deg);
+    -webkit-transform: skew(16deg, 0deg);
+    transform: skew(16deg, 0deg);
+
 }
 
 header .show-courses .description{
@@ -115,17 +137,29 @@ header .show-courses .description ul{
     border-top: 1px solid rgb(255, 255, 255);
     margin-top:0.4rem;
     margin-bottom: 0.5rem;
+   
  }
 
 
 
 header .subscribe{
-    width: calc(60% -  50px);
+    display: flex;
+    width: 60%;
     background:#fed900;
-    border-left: 100px solid #424032;
-    border-top: 550px solid transparent;
+ 
+   
  }
 
+ header .subscribe .content{
+    z-index: 2;
+ }
+
+
+
+ header .subscribe .content img{
+    height:500px;
+    width:100%;
+ }
 
 main{
     width:100%;
