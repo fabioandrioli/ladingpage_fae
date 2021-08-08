@@ -16,6 +16,7 @@
 
 html, body{
     height: 100vh;
+    background:#424032;
    
 }
 
@@ -359,6 +360,8 @@ footer{
         display: flex;
         width: 100%;
         background:#fed900;
+        clip-path: polygon( 0 0,100% 10%,100% calc(100% - 10%),0 100%);
+        web-clip-path: polygon( 0 0,100% 10%,100% calc(100% - 10%),0 100%);
         
     }
 
@@ -392,7 +395,7 @@ footer{
     }
 
     header .subscribe .content-text h5 {
-        margin-top:30px;
+        margin-top:60px;
         color: #5b5a51;
         line-height: 2rem;
         font-size:25pt;
