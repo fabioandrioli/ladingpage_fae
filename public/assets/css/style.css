@@ -1,5 +1,6 @@
 :root{
     --gray-fae:#26261c;
+    
     --light-gray-fae:#3e3e36;
     --mostard-color: #d6c036;
 }
@@ -9,8 +10,13 @@
     padding:0;
 }
 
+.clear{
+    clear:both;
+}
+
 html, body{
     height: 100vh;
+    background:#424032;
 }
 
 
@@ -50,7 +56,6 @@ header .show-courses::after{
     -ms-transform: skew(16deg, 0deg);
     -webkit-transform: skew(16deg, 0deg);
     transform: skew(16deg, 0deg);
-
 }
 
 header .show-courses .description{
@@ -119,7 +124,6 @@ header .show-courses .description ul{
     text-decoration: none;
     text-align: center;
     padding:0 2%;
-
 }
 
 header .show-courses .description ul li{
@@ -132,22 +136,18 @@ header .show-courses .description ul li{
 header .show-courses .description ul li i{
     margin-left: 10px;
     font-size:21px;
-
 }
 
 header .show-courses .description hr{
     border-top: 1px solid rgb(255, 255, 255);
     margin-top:0.4rem;
     margin-bottom: 0.5rem;
-
 }
 
 header .subscribe{
     display: flex;
     width: 60%;
     background:#fed900;
- 
-   
 }
 
 header .subscribe .content{
@@ -159,8 +159,6 @@ header .subscribe .content img{
     height:679px;
     width:332px;
 }
-
-
 
 header .subscribe .content-text{
     display: flex;
@@ -217,7 +215,6 @@ header .subscribe .content-text a:hover{
     background-color:#525041;
 }
 
-
 main{
     width:100%;
 }
@@ -243,7 +240,6 @@ main{
 
  #section-contacts-information .card .card-body .card-title{
     width:150px;
-    
  }
 
  #section-contacts-information .card .card-body .card-text{
@@ -263,6 +259,7 @@ main{
  #section-contacts-information .card .card-body h5 span:last-child{
     margin-left:10px;
     font-weight:bold;
+    color:white;
  }
 
 footer{
@@ -273,6 +270,156 @@ footer{
     text-align:right;
     bottom: 0;
 }
+
+.mobile-call-action{
+    display:none;
+}
+
+#section-contacts-information a{
+    display: none;
+}
+
+
+@media screen and (max-width: 1075px) {
+
+    header{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .show-courses{
+        position:relative;
+        z-index: 1;
+        background:#424032;
+        display: flex;
+        width: 100%;
+        color:white;
+        justify-content:center;
+        
+    }
+
+    header .show-courses .description{
+        display: flex;
+        padding:2%;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    header .show-courses .description .title span:last-child{
+        line-height:1;
+    }
+
+    header .show-courses .description ul li{
+        display:flex;
+        width:80%;
+        justify-content:flex-end;
+        align-items: center;
+    }
+
+    header .show-courses .description .view-courses{
+        display:none;
+    }
+
+    header .show-courses .description a {
+        display:none;
+    }
+
+    header .show-courses .description .course-at-other-city{
+        font-weight:300;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    header .show-courses .description .course-at-other-city span{
+        color:white;
+        font-weight:bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    header .subscribe{
+        display: flex;
+        width: 100%;
+        background:#fed900;
+        clip-path: polygon( 0 0,100% 10vw,100% calc(100% - 5vw),0 100%);
+        web-clip-path: polygon( 0 0,100% 10vw,100% calc(100% - 5vw),0 100%);
+    }
+
+    header .subscribe .content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background:#fed900;
+        flex-direction: row-reverse;
+    }
+
+    header .subscribe .content img{
+        position: absolute;
+        height:400px;
+        width:200px;
+        margin-top:30px;
+        align-self: flex-end;
+    }
+
+    header .subscribe .content-text {
+       float:right;
+       width: 100%;
+    }
+
+    header .subscribe .content-text h4 {
+        display:none;
+    }
+
+    header .subscribe .content-text .title {
+        display:none;
+    }
+
+    header .subscribe .content-text h5 {
+        margin-top:30px;
+        color: #5b5a51;
+        line-height: 2rem;
+        font-size:25pt;
+        align-self: center;
+        width:100%;
+    }
+
+    header .subscribe .content-text p {
+        font-size: 15pt;
+    }
+
+    header .subscribe .content-text p:last-child {
+       width:250px;
+       text-align: center;
+       color:black;
+    }
+
+    header .subscribe .content-text p:last-child b{
+        text-decoration: underline 1px solid;
+        text-underline-offset: 3px;
+    }
+
+    header .subscribe .content-text a {
+        padding:1rem;
+        width:250px;
+    }
+
+    .bi.bi-chevron-down{
+        font-size:15pt;
+    }
+
+    .desktop{
+        display:none;
+    }
+
+    .mobile-call-action{
+        display:inline-block;
+        width:280px;
+    }
+  
+}
+
 
 @media screen and (max-width: 860px) {
 
@@ -292,6 +439,16 @@ footer{
 
      #section-geo-location-map{
         display:none;
+    }
+
+    #section-contacts-information a{
+        display:inline-block;
+        color:white;
+        text-decoration:none;
+        font-weight: bold;
+        border: 4px solid var(--mostard-color);
+        padding:4%;
+        border-radius: 0.3rem;
     }
 
     footer{
