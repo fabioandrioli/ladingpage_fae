@@ -16,7 +16,7 @@
 
 html, body{
     height: 100vh;
-    background:#424032;
+   
 }
 
 
@@ -300,6 +300,22 @@ footer{
         
     }
 
+    header .show-courses::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background:#424032;
+        transform-origin: top right;
+        -ms-transform: skew(-16deg, 0deg);
+        -webkit-transform: skew(-16deg, 0deg);
+        transform: skew(-16deg, 0deg);
+    }
+
     header .show-courses .description{
         display: flex;
         padding:2%;
@@ -343,8 +359,7 @@ footer{
         display: flex;
         width: 100%;
         background:#fed900;
-        clip-path: polygon( 0 0,100% 10vw,100% calc(100% - 5vw),0 100%);
-        web-clip-path: polygon( 0 0,100% 10vw,100% calc(100% - 5vw),0 100%);
+        
     }
 
     header .subscribe .content{
