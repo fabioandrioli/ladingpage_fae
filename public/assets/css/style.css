@@ -14,9 +14,10 @@ html, body{
 }
 
 
-.bi.bi-whatsapp, .bi.bi-arrow-right, .bi.bi-envelope{
+.bi.bi-whatsapp, .bi.bi-arrow-right, .bi.bi-envelope,.bi.bi-chevron-down{
     color: var(--mostard-color);
 }
+
 
 header{
     position: relative;
@@ -158,6 +159,64 @@ header .subscribe .content img{
     height:679px;
     width:332px;
 }
+
+
+
+header .subscribe .content-text{
+    display: flex;
+    flex-direction:column;
+    padding: 2%;
+    width:300px;
+}
+
+header .subscribe .content-text h4{
+    text-align: center;
+    font-size: 28pt;
+    font-family: georgia;
+    font-weight: 600;
+    letter-spacing: -4px;
+    font-style: italic;
+    text-decoration: underline #fff 1px;
+    line-height: 0.5;
+    text-underline-offset: 4px;
+}
+
+header .subscribe .content-text .title{
+    text-align: center;
+    font-size: 5pt;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color:black;
+    font-style: italic;
+}
+
+header .subscribe .content-text p,h5{
+    color:#5b5a51;
+    line-height:1.5rem;
+}
+
+header .subscribe .content-text p{
+    font-size:10pt;
+}
+
+header .subscribe .content-text a{
+    width:150px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    background-color:#424032;
+    padding:3%;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+header .subscribe .content-text a:hover{
+    color:rgb(199, 199, 199);
+    background-color:#525041;
+}
+
 
 main{
     width:100%;
